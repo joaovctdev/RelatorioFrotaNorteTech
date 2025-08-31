@@ -103,7 +103,7 @@
       }
 
       .container {
-        max-width: 1500px;
+        max-width: 1600px;
         margin: 0 auto;
         padding: 40px 20px;
       }
@@ -415,7 +415,7 @@
       .relatorio-manutencao {
         margin-top: 50px;
         padding: 20px;
-        margin-left: 222px;
+        margin-left: 0px;
         max-width: 1464px;
         background: var(--table-alt-row);
         border-radius: 10px;
@@ -666,57 +666,57 @@
           <!-- As fotos dos veículos serão inseridas aqui via JavaScript -->
         </div>
       </div>
-    </div>
-    <div class="relatorio-manutencao">
-      <h2>Relatório de Manutenção</h2>
 
-      <div class="filters-manutencao">
-        <div class="filter-group">
-          <label for="manutencaoMonthFilter">Filtrar por Mês</label>
-          <select id="manutencaoMonthFilter">
-            <option value="all">Todos os meses</option>
-            <option value="0">Janeiro</option>
-            <option value="1">Fevereiro</option>
-            <option value="2">Março</option>
-            <option value="3">Abril</option>
-            <option value="4">Maio</option>
-            <option value="5">Junho</option>
-            <option value="6">Julho</option>
-            <option value="7">Agosto</option>
-            <option value="8">Setembro</option>
-            <option value="9">Outubro</option>
-            <option value="10">Novembro</option>
-            <option value="11">Dezembro</option>
-          </select>
+      <div class="relatorio-manutencao">
+        <h2>Relatório de Manutenção</h2>
+
+        <div class="filters-manutencao">
+          <div class="filter-group">
+            <label for="manutencaoMonthFilter">Filtrar por Mês</label>
+            <select id="manutencaoMonthFilter">
+              <option value="all">Todos os meses</option>
+              <option value="0">Janeiro</option>
+              <option value="1">Fevereiro</option>
+              <option value="2">Março</option>
+              <option value="3">Abril</option>
+              <option value="4">Maio</option>
+              <option value="5">Junho</option>
+              <option value="6">Julho</option>
+              <option value="7">Agosto</option>
+              <option value="8">Setembro</option>
+              <option value="9">Outubro</option>
+              <option value="10">Novembro</option>
+              <option value="11">Dezembro</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="manutencaoWeekFilter">Filtrar por Semana</label>
+            <select id="manutencaoWeekFilter">
+              <option value="all">Todas as semanas</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="manutencaoPlacaFilter">Filtrar por Placa</label>
+            <select id="manutencaoPlacaFilter">
+              <option value="all">Todas as placas</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="manutencaoTipoFilter">Filtrar por Tipo</label>
+            <select id="manutencaoTipoFilter">
+              <option value="all">Todos os tipos</option>
+            </select>
+          </div>
         </div>
 
-        <div class="filter-group">
-          <label for="manutencaoWeekFilter">Filtrar por Semana</label>
-          <select id="manutencaoWeekFilter">
-            <option value="all">Todas as semanas</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label for="manutencaoPlacaFilter">Filtrar por Placa</label>
-          <select id="manutencaoPlacaFilter">
-            <option value="all">Todas as placas</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label for="manutencaoTipoFilter">Filtrar por Tipo</label>
-          <select id="manutencaoTipoFilter">
-            <option value="all">Todos os tipos</option>
-          </select>
+        <div class="galeria-manutencao" id="galeriaManutencao">
+          <!-- Os dados de manutenção serão inseridos aqui via JavaScript -->
         </div>
       </div>
-
-      <div class="galeria-manutencao" id="galeriaManutencao">
-        <!-- Os dados de manutenção serão inseridos aqui via JavaScript -->
-      </div>
     </div>
-
     <footer class="footer">
       <p>
         v 0.0.2 • Desenvolvido para o controle de frota • João Victor Santos ©
