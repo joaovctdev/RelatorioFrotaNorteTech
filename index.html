@@ -655,9 +655,12 @@
           </div>
 
           <div class="filter-group">
-            <label for="fotoPlacaFilter">Filtrar por Placa</label>
-            <select id="fotoPlacaFilter">
-              <option value="all">Todas as placas</option>
+            <!-- ALTERAÇÃO AQUI: Trocando filtro de placa por frota -->
+            <label for="fotoFrotaFilter">Filtrar por Frota</label>
+            <select id="fotoFrotaFilter">
+              <option value="all">Todas as frotas</option>
+              <option value="LEVE">Leve</option>
+              <option value="PESADA">Pesada</option>
             </select>
           </div>
         </div>
@@ -725,7 +728,7 @@
     </footer>
 
     <script>
-      // Controle do header
+      // CONTROLE DO HEADER
       const header = document.getElementById("mainHeader");
       let lastScrollY = window.scrollY;
 
@@ -1129,14 +1132,14 @@
           if (tableBody) {
             const row = document.createElement("tr");
             row.innerHTML = `
-                        <td>${fornecedor}</td>
-                        <td>${dataEmissao}</td>
-                        <td>${placa}</td>
-                        <td>${manutencao}</td>
-                        <td>${prazoPagamento}</td>
-                        <td>${formatCurrency(preco)}</td>
-                        <td>${descricao}</td>
-                    `;
+                  <td>${fornecedor}</td>
+                  <td>${dataEmissao}</td>
+                  <td>${placa}</td>
+                  <td>${manutencao}</td>
+                  <td>${prazoPagamento}</td>
+                  <td>${formatCurrency(preco)}</td>
+                  <td>${descricao}</td>
+              `;
             tableBody.appendChild(row);
           }
 
@@ -1221,6 +1224,7 @@
         setupFilters();
         setupTableToggle();
       });
+
       // ====== CONFIGURAÇÃO DO RELATÓRIO FOTOGRÁFICO ======
 
       // Variáveis globais
@@ -1232,6 +1236,7 @@
           MES: "SETEMBRO",
           SEMANA: "1",
           PLACA: "PHQ-1D82",
+          FROTA: "PESADA",
           "FOTO FRENTE":
             "https://drive.google.com/thumbnail?id=14dXcDGSZdJvgoaJzDxtcT6AlcCHFUKnL&sz=w1000",
           "FOTO LATERAL D":
@@ -1313,8 +1318,9 @@
 
         window.fotosVeiculos = dados.map((item) => ({
           placa: item.PLACA,
-          mes: item.MES.toLowerCase(), // Mantém como string (ex: "setembro")
-          mesNumero: mesParaNumero(item.MES), // Adiciona número do mês
+          frota: item.FROTA || "PESADA",
+          mes: item.MES.toLowerCase(),
+          mesNumero: mesParaNumero(item.MES),
           semana: parseInt(item.SEMANA),
           fotos: [
             {
@@ -1349,23 +1355,23 @@
       function popularFiltrosFotos() {
         const mesFilter = document.getElementById("fotoMonthFilter");
         const semanaFilter = document.getElementById("fotoWeekFilter");
-        const placaFilter = document.getElementById("fotoPlacaFilter");
+        const frotaFilter = document.getElementById("fotoFrotaFilter");
 
-        if (!mesFilter || !semanaFilter || !placaFilter) {
+        if (!mesFilter || !semanaFilter || !frotaFilter) {
           console.error("Filtros não encontrados");
           return;
         }
 
         // Limpar e popular filtros
-        placaFilter.innerHTML = '<option value="all">Todas as placas</option>';
+        frotaFilter.innerHTML = '<option value="all">Todas as frotas</option>';
         semanaFilter.innerHTML =
           '<option value="all">Todas as semanas</option>';
 
-        // Popular placas
-        const placas = [...new Set(window.fotosVeiculos.map((v) => v.placa))];
-        placas.forEach((placa) => {
-          placaFilter.innerHTML += `<option value="${placa}">${placa}</option>`;
-        });
+        // Popular opções de frota (fixas)
+        frotaFilter.innerHTML += `
+    <option value="LEVE">Leve</option>
+    <option value="PESADA">Pesada</option>
+  `;
 
         // Popular semanas
         const semanas = [...new Set(window.fotosVeiculos.map((v) => v.semana))];
@@ -1377,6 +1383,7 @@
 
         // Definir valores padrão
         mesFilter.value = "8"; // Setembro é o mês 8 (0-indexed)
+        frotaFilter.value = "PESADA"; // Valor padrão para frota
         if (semanas.includes(1)) {
           semanaFilter.value = "1";
         }
@@ -1384,7 +1391,7 @@
         console.log("Filtros populados:", {
           mes: mesFilter.value,
           semana: semanaFilter.value,
-          placa: placaFilter.value,
+          frota: frotaFilter.value,
         });
       }
 
@@ -1393,26 +1400,26 @@
         // Criar modal
         const modal = document.createElement("div");
         modal.style.cssText = `
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
-            background: rgba(0,0,0,0.95); display: flex; justify-content: center; 
-            align-items: center; z-index: 10000; cursor: pointer;
-        `;
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+      background: rgba(0,0,0,0.95); display: flex; justify-content: center; 
+      align-items: center; z-index: 10000; cursor: pointer;
+  `;
 
         const img = document.createElement("img");
         img.src = src;
         img.alt = alt;
         img.style.cssText = `
-            max-width: 90%; max-height: 90%; object-fit: contain;
-            border-radius: 8px; box-shadow: 0 5px 25px rgba(0,0,0,0.5);
-        `;
+      max-width: 90%; max-height: 90%; object-fit: contain;
+      border-radius: 8px; box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+  `;
 
         const closeBtn = document.createElement("button");
         closeBtn.innerHTML = "×";
         closeBtn.style.cssText = `
-            position: absolute; top: 20px; right: 20px; background: #e74c3c;
-            color: white; border: none; border-radius: 50%; width: 40px;
-            height: 40px; font-size: 24px; cursor: pointer; z-index: 10001;
-        `;
+      position: absolute; top: 20px; right: 20px; background: #e74c3c;
+      color: white; border: none; border-radius: 50%; width: 40px;
+      height: 40px; font-size: 24px; cursor: pointer; z-index: 10001;
+  `;
 
         const fechar = () => document.body.removeChild(modal);
         closeBtn.onclick = fechar;
@@ -1429,13 +1436,13 @@
           document.getElementById("fotoMonthFilter")?.value || "all";
         const semanaFiltro =
           document.getElementById("fotoWeekFilter")?.value || "all";
-        const placaFiltro =
-          document.getElementById("fotoPlacaFilter")?.value || "all";
+        const frotaFiltro =
+          document.getElementById("fotoFrotaFilter")?.value || "all";
 
         console.log("Filtrando por:", {
           mes: mesFiltro,
           semana: semanaFiltro,
-          placa: placaFiltro,
+          frota: frotaFiltro,
         });
 
         const galeria = document.getElementById("galeriaVeiculos");
@@ -1461,9 +1468,9 @@
             return false;
           }
 
-          // Filtro por placa
-          if (placaFiltro !== "all" && veiculo.placa !== placaFiltro) {
-            console.log("Filtrando placa:", veiculo.placa, "!=", placaFiltro);
+          // Filtro por frota
+          if (frotaFiltro !== "all" && veiculo.frota !== frotaFiltro) {
+            console.log("Filtrando frota:", veiculo.frota, "!=", frotaFiltro);
             return false;
           }
 
@@ -1480,36 +1487,36 @@
 
         veiculosFiltrados.forEach((veiculo) => {
           const veiculoHTML = `
-                <div class="veiculo-item">
-                    <div class="veiculo-placa">${veiculo.placa} - Semana ${
+          <div class="veiculo-item">
+              <div class="veiculo-placa">${veiculo.placa} - Semana ${
             veiculo.semana
           }</div>
-                    <div class="veiculo-fotos">
-                        ${veiculo.fotos
-                          .map((foto) => {
-                            const linkConvertido = converterLinkGoogleDrive(
-                              foto.caminho
-                            );
-                            return `
-                                <div class="foto-container" onclick="abrirVisualizacaoAmpliada('${linkConvertido}', '${
-                              foto.descricao
-                            }')">
-                                    <img src="${linkConvertido}" alt="${
-                              foto.descricao
-                            }" class="veiculo-foto"
-                                         onerror="this.src='https://images.unsplash.com/photo-1549399542-7e82138d43a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
-                                    <div class="foto-legenda">${foto.nome.replace(
-                                      /_/g,
-                                      " "
-                                    )}</div>
-                                    <div class="foto-zoom-icon"><i class="fas fa-search-plus"></i></div>
-                                </div>
-                            `;
-                          })
-                          .join("")}
-                    </div>
-                </div>
-            `;
+              <div class="veiculo-fotos">
+                  ${veiculo.fotos
+                    .map((foto) => {
+                      const linkConvertido = converterLinkGoogleDrive(
+                        foto.caminho
+                      );
+                      return `
+                          <div class="foto-container" onclick="abrirVisualizacaoAmpliada('${linkConvertido}', '${
+                        foto.descricao
+                      }')">
+                              <img src="${linkConvertido}" alt="${
+                        foto.descricao
+                      }" class="veiculo-foto"
+                                   onerror="this.src='https://images.unsplash.com/photo-1549399542-7e82138d43a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                              <div class="foto-legenda">${foto.nome.replace(
+                                /_/g,
+                                " "
+                              )}</div>
+                              <div class="foto-zoom-icon"><i class="fas fa-search-plus"></i></div>
+                          </div>
+                      `;
+                    })
+                    .join("")}
+              </div>
+          </div>
+      `;
           galeria.innerHTML += veiculoHTML;
         });
       }
@@ -1523,51 +1530,51 @@
       function configurarFiltrosFotos() {
         const monthFilter = document.getElementById("fotoMonthFilter");
         const weekFilter = document.getElementById("fotoWeekFilter");
-        const placaFilter = document.getElementById("fotoPlacaFilter");
+        const frotaFilter = document.getElementById("fotoFrotaFilter");
 
         if (monthFilter)
           monthFilter.addEventListener("change", carregarRelatorioFotografico);
         if (weekFilter)
           weekFilter.addEventListener("change", carregarRelatorioFotografico);
-        if (placaFilter)
-          placaFilter.addEventListener("change", carregarRelatorioFotografico);
+        if (frotaFilter)
+          frotaFilter.addEventListener("change", carregarRelatorioFotografico);
       }
 
       // Adicionar estilos
       const addStyles = () => {
         const style = document.createElement("style");
         style.textContent = `
-            .foto-container {
-                position: relative; overflow: hidden; border-radius: 4px; 
-                cursor: pointer; transition: transform 0.2s;
-            }
-            .foto-container:hover { transform: scale(1.02); }
-            .veiculo-foto { 
-                width: 100%; height: 120px; object-fit: cover; 
-            }
-            .foto-legenda {
-                position: absolute; bottom: 0; left: 0; right: 0;
-                background: rgba(0,0,0,0.7); color: white; padding: 4px;
-                font-size: 0.8rem; text-align: center; text-transform: capitalize;
-            }
-            .foto-zoom-icon {
-                position: absolute; top: 5px; right: 5px;
-                background: rgba(0,0,0,0.7); color: white; width: 24px;
-                height: 24px; border-radius: 50%; display: flex;
-                align-items: center; justify-content: center; opacity: 0;
-                transition: opacity 0.3s; pointer-events: none;
-            }
-            .foto-container:hover .foto-zoom-icon { opacity: 1; }
-            .foto-zoom-icon i { font-size: 12px; }
-            .veiculo-fotos {
-                display: grid; grid-template-columns: repeat(2, 1fr);
-                gap: 10px; padding: 12px;
-            }
-            .sem-fotos {
-                grid-column: 1 / -1; text-align: center; padding: 20px;
-                color: #7f8c8d; font-style: italic;
-            }
-        `;
+      .foto-container {
+          position: relative; overflow: hidden; border-radius: 4px; 
+          cursor: pointer; transition: transform 0.2s;
+      }
+      .foto-container:hover { transform: scale(1.02); }
+      .veiculo-foto { 
+          width: 100%; height: 120px; object-fit: cover; 
+      }
+      .foto-legenda {
+          position: absolute; bottom: 0; left: 0; right: 0;
+          background: rgba(0,0,0,0.7); color: white; padding: 4px;
+          font-size: 0.8rem; text-align: center; text-transform: capitalize;
+      }
+      .foto-zoom-icon {
+          position: absolute; top: 5px; right: 5px;
+          background: rgba(0,0,0,0.7); color: white; width: 24px;
+          height: 24px; border-radius: 50%; display: flex;
+          align-items: center; justify-content: center; opacity: 0;
+          transition: opacity 0.3s; pointer-events: none;
+      }
+      .foto-container:hover .foto-zoom-icon { opacity: 1; }
+      .foto-zoom-icon i { font-size: 12px; }
+      .veiculo-fotos {
+          display: grid; grid-template-columns: repeat(2, 1fr);
+          gap: 10px; padding: 12px;
+      }
+      .sem-fotos {
+          grid-column: 1 / -1; text-align: center; padding: 20px;
+          color: #7f8c8d; font-style: italic;
+      }
+  `;
         document.head.appendChild(style);
       };
 
@@ -1581,6 +1588,7 @@
         window.abrirVisualizacaoAmpliada = abrirVisualizacaoAmpliada;
         window.carregarRelatorioFotografico = carregarRelatorioFotografico;
       });
+
       // ====== CONFIGURAÇÃO DO RELATÓRIO DE MANUTENÇÃO ======
 
       // Variáveis globais
@@ -1733,50 +1741,50 @@
 
         itensFiltrados.forEach((item) => {
           const itemHTML = `
-                <div class="manutencao-item">
-                    <div class="manutencao-header">
-                        <div class="manutencao-placa">${item.placa} - Semana ${
+          <div class="manutencao-item">
+              <div class="manutencao-header">
+                  <div class="manutencao-placa">${item.placa} - Semana ${
             item.semana
           }</div>
-                        <div class="manutencao-tipo">${item.tipo}</div>
-                    </div>
-                    
-                    <div class="manutencao-info">
-                        <div class="manutencao-descricao">
-                            <strong>Descrição:</strong><br>
-                            ${item.descricao}
-                        </div>
-                        <div class="manutencao-custo">Custo: ${formatCurrency(
-                          item.custo
-                        )}</div>
-                    </div>
-                    
-                    <div class="manutencao-fotos">
-                        ${item.fotos
-                          .map((foto) => {
-                            const linkConvertido = converterLinkGoogleDrive(
-                              foto.caminho
-                            );
-                            return `
-                                <div class="foto-container" onclick="abrirVisualizacaoAmpliada('${linkConvertido}', '${
-                              foto.descricao
-                            }')">
-                                    <img src="${linkConvertido}" alt="${
-                              foto.descricao
-                            }" class="veiculo-foto"
-                                         onerror="this.src='https://images.unsplash.com/photo-1549399542-7e82138d43a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
-                                    <div class="foto-legenda">${foto.nome.replace(
-                                      /_/g,
-                                      " "
-                                    )}</div>
-                                    <div class="foto-zoom-icon"><i class="fas fa-search-plus"></i></div>
-                                </div>
-                            `;
-                          })
-                          .join("")}
-                    </div>
-                </div>
-            `;
+                  <div class="manutencao-tipo">${item.tipo}</div>
+              </div>
+              
+              <div class="manutencao-info">
+                  <div class="manutencao-descricao">
+                      <strong>Descrição:</strong><br>
+                      ${item.descricao}
+                  </div>
+                  <div class="manutencao-custo">Custo: ${formatCurrency(
+                    item.custo
+                  )}</div>
+              </div>
+              
+              <div class="manutencao-fotos">
+                  ${item.fotos
+                    .map((foto) => {
+                      const linkConvertido = converterLinkGoogleDrive(
+                        foto.caminho
+                      );
+                      return `
+                          <div class="foto-container" onclick="abrirVisualizacaoAmpliada('${linkConvertido}', '${
+                        foto.descricao
+                      }')">
+                              <img src="${linkConvertido}" alt="${
+                        foto.descricao
+                      }" class="veiculo-foto"
+                                   onerror="this.src='https://images.unsplash.com/photo-1549399542-7e82138d43a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                              <div class="foto-legenda">${foto.nome.replace(
+                                /_/g,
+                                " "
+                              )}</div>
+                              <div class="foto-zoom-icon"><i class="fas fa-search-plus"></i></div>
+                          </div>
+                      `;
+                    })
+                    .join("")}
+              </div>
+          </div>
+      `;
           galeria.innerHTML += itemHTML;
         });
       }
