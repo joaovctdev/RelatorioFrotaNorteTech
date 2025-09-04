@@ -72,16 +72,6 @@
     {
         "MES": "SETEMBRO",
         "SEMANA": "1",
-        "PLACA": "QZZ-8F36",
-        "FROTA": "PESADA",
-        "FOTO FRENTE": "https://drive.google.com/file/d/1q-blm1qw1S167Bb8sgKaBj2ao6pTyqJd/view?usp=drive_link",
-        "FOTO LATERAL D": "https://drive.google.com/file/d/1Saub8ZvYXSV_kafqMBipfhL93rAjqsQ1/view?usp=drive_link", 
-        "FOTO LATERAL E": "https://drive.google.com/file/d/1WuEoLtdkOq8q0pBa0pDa8i6sipoJGY5o/view?usp=drive_link",
-        "FOTO INTERIOR": "https://drive.google.com/file/d/1kJOfy7Yx3OR55_aysR9V4PElTJokNIM5/view?usp=drive_link"
-    },
-    {
-        "MES": "SETEMBRO",
-        "SEMANA": "1",
         "PLACA": "PHV-1J95",
         "FROTA": "PESADA",
         "FOTO FRENTE": "https://drive.google.com/file/d/1IFkzaAIcsB9MLX-wVnkKlk_E-3Pcq3ue/view?usp=drive_link",
@@ -232,16 +222,6 @@
     {
         "MES": "SETEMBRO",
         "SEMANA": "1",
-        "PLACA": "TSC-3G04",
-        "FROTA": "PESADA",
-        "FOTO FRENTE": "https://drive.google.com/file/d/17jhmNDcgE_VkEjThCqFXIvStg_vv6CZx/view?usp=drive_link",
-        "FOTO LATERAL D": "https://drive.google.com/file/d/1sSECGIhYXX1mH0dhVp7GSw_we36ENTal/view?usp=drive_link", 
-        "FOTO LATERAL E": "https://drive.google.com/file/d/1djfXgKZHQ5sUkVx_iz-1uLa2PI9aSubF/view?usp=drive_link",
-        "FOTO INTERIOR": "https://drive.google.com/file/d/1NDL8sQcwXiJfz_QxNMEb4oSjeYdFyggv/view?usp=drive_link"
-    },
-    {
-        "MES": "SETEMBRO",
-        "SEMANA": "1",
         "PLACA": "PHV-1J85",
         "FROTA": "PESADA",
         "FOTO FRENTE": "https://drive.google.com/file/d/1fsXpJXkvpF-LDmNU7G1_GgYKRl2dt5LU/view?usp=drive_link",
@@ -338,6 +318,26 @@
         "FOTO LATERAL D": "https://drive.google.com/file/d/17DSwOkE28uTqAB5I3NLNMu6EnrxwYhsq/view?usp=drive_link", 
         "FOTO LATERAL E": "https://drive.google.com/file/d/1Bwh6rIIhVH2x8w-V7KMlANW6bGUrk6bA/view?usp=drive_link",
         "FOTO INTERIOR": "https://drive.google.com/file/d/1uvyaYfCBod2A7FOogk6LGmJIvwwn3D7w/view?usp=drive_link"
+    },
+    {
+        "MES": "SETEMBRO",
+        "SEMANA": "1",
+        "PLACA": "TSC-3G04",
+        "FROTA": "PESADA",
+        "FOTO FRENTE": "https://drive.google.com/file/d/17jhmNDcgE_VkEjThCqFXIvStg_vv6CZx/view?usp=drive_link",
+        "FOTO LATERAL D": "https://drive.google.com/file/d/1sSECGIhYXX1mH0dhVp7GSw_we36ENTal/view?usp=drive_link", 
+        "FOTO LATERAL E": "https://drive.google.com/file/d/1djfXgKZHQ5sUkVx_iz-1uLa2PI9aSubF/view?usp=drive_link",
+        "FOTO INTERIOR": "https://drive.google.com/file/d/1NDL8sQcwXiJfz_QxNMEb4oSjeYdFyggv/view?usp=drive_link"
+    },
+    {
+        "MES": "SETEMBRO",
+        "SEMANA": "1",
+        "PLACA": "QZZ-8F36",
+        "FROTA": "PESADA",
+        "FOTO FRENTE": "https://drive.google.com/file/d/1q-blm1qw1S167Bb8sgKaBj2ao6pTyqJd/view?usp=drive_link",
+        "FOTO LATERAL D": "https://drive.google.com/file/d/1Saub8ZvYXSV_kafqMBipfhL93rAjqsQ1/view?usp=drive_link", 
+        "FOTO LATERAL E": "https://drive.google.com/file/d/1WuEoLtdkOq8q0pBa0pDa8i6sipoJGY5o/view?usp=drive_link",
+        "FOTO INTERIOR": "https://drive.google.com/file/d/1kJOfy7Yx3OR55_aysR9V4PElTJokNIM5/view?usp=drive_link"
     }
 
 
