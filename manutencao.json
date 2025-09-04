@@ -10,7 +10,18 @@
         "FOTO KM": "https://drive.google.com/file/d/1-OOU4-C4wyU1c-X3DL9PFrPNKvJW74g4/view?usp=drive_link",
         "DESCRICAO": "EQUIPAMENTO APRESENTOU VAZAMENTO NA CONEXÃO DA MANGUEIRA, SUPORTE DO CICLISTA SOLTO, E ROSCA DA CONEXÃO DA LANÇA COM AVÁRIA - NECESSÁRIO TROCAR A MANGUEIRA, CONEXÃO, SOLDA NA LANÇA E NO SUPORTE",
         "CUSTO": 1090
-
-    } 
+    },
+    {
+        "MES": "SETEMBRO",
+        "SEMANA": "1",
+        "PLACA": "QZC-9J71",
+        "MANUTENÇÃO": "CORRETIVA",
+        "FOTO FRENTE": "https://drive.google.com/file/d/1KJHnQzDOi9nfZEbQJ7NA9_mr8Xa-IZER/view?usp=drive_link",
+        "FOTO AVARIA": "https://drive.google.com/file/d/18GTPlwvelfMqcrvNd2mcl8bIFwtXkMhr/view?usp=drive_link", 
+        "FOTO MANUTENCAO": "",
+        "FOTO KM": "https://drive.google.com/file/d/1wNUdlHgWlBcb7cobVJIJU4Sl2iZqRShi/view?usp=drive_link",
+        "DESCRICAO": "VÁLVULA HIDRAULICA APRESENTOU UM VAZAMENTO - FOI NECESSARIA A TROCA DA ROSCA E SOLDA ELÉTRICA",
+        "CUSTO": 240
+    }  
    
 ]
