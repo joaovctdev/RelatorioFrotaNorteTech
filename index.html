@@ -458,6 +458,7 @@
         overflow: hidden;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
+        display: flex;
         flex-direction: column;
         height: 100%;
       }
@@ -489,11 +490,15 @@
       }
 
       .manutencao-info {
+        flex-grow: 1;
+        display: flex;
         padding: 15px;
+        flex-direction: column;
       }
 
       .manutencao-descricao {
         margin-bottom: 15px;
+        flex-grow: 1;
         line-height: 1.5;
         color: #2c3e50;
       }
