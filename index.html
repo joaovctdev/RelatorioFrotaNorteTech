@@ -103,7 +103,7 @@
       }
 
       .container {
-        max-width: 1600px;
+        max-width: 1550px;
         margin: 0 auto;
         padding: 40px 20px;
       }
@@ -416,7 +416,7 @@
         margin-top: 50px;
         padding: 20px;
         margin-left: 0px;
-        max-width: 1464px;
+        max-width: 1501px;
         background: var(--table-alt-row);
         border-radius: 10px;
         border: 1px solid #e2c529;
@@ -1230,24 +1230,6 @@
       // Variáveis globais
       window.fotosVeiculos = [];
 
-      // Dados de exemplo baseados no seu JSON
-      const dadosExemploFotos = [
-        {
-          MES: "SETEMBRO",
-          SEMANA: "1",
-          PLACA: "PHQ-1D82",
-          FROTA: "PESADA",
-          "FOTO FRENTE":
-            "https://drive.google.com/thumbnail?id=14dXcDGSZdJvgoaJzDxtcT6AlcCHFUKnL&sz=w1000",
-          "FOTO LATERAL D":
-            "https://drive.google.com/thumbnail?id=1vgwFia60KBwzRe10fiEqWHXf-Mm7Jpmd&sz=w1000",
-          "FOTO LATERAL E":
-            "https://drive.google.com/thumbnail?id=1YWCoFJmiFN6JPFsh9ABSkuY2ujEyfqY3&sz=w1000",
-          "FOTO INTERIOR":
-            "https://drive.google.com/thumbnail?id=1G7WuXjVGp4exvF42KnuzFgRt4au_YwLc&sz=w1000",
-        },
-      ];
-
       // Mapeamento de meses para valores numéricos
       const mesesMap = {
         janeiro: 0,
@@ -1383,7 +1365,7 @@
 
         // Definir valores padrão
         mesFilter.value = "8"; // Setembro é o mês 8 (0-indexed)
-        frotaFilter.value = "PESADA"; // Valor padrão para frota
+        frotaFilter.value = "Todas as frotas"; // Valor padrão para frota
         if (semanas.includes(1)) {
           semanaFilter.value = "1";
         }
