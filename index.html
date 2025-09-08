@@ -1409,9 +1409,9 @@
             semana: parseInt(item.SEMANA),
             fotos: [
               {
-                nome: "frente",
+                nome: "frente / traseira",
                 caminho: item["FOTO FRENTE"],
-                descricao: "Frente - " + item.PLACA,
+                descricao: "Frente / Traseira - " + item.PLACA,
               },
               {
                 nome: "lateral_direita",
@@ -1473,7 +1473,7 @@
           mesFilter.value = "8"; // Setembro é o mês 8 (0-indexed)
           frotaFilter.value = "Todas as frotas"; // Valor padrão para frota
           if (semanas.includes(1)) {
-            semanaFilter.value = "1";
+            semanaFilter.value = "2";
           }
 
           console.log("Filtros populados:", {
@@ -1735,9 +1735,9 @@
               custo: parseFloat(custo) || 0,
               fotos: [
                 {
-                  nome: "frente",
+                  nome: "frente / traseira",
                   caminho: item["FOTO FRENTE"],
-                  descricao: "Frente - " + item.PLACA,
+                  descricao: "Frente / Traseira - " + item.PLACA,
                 },
                 {
                   nome: "Foto avaria",
