@@ -1473,7 +1473,7 @@
           mesFilter.value = "8"; // Setembro é o mês 8 (0-indexed)
           frotaFilter.value = "Todas as frotas"; // Valor padrão para frota
           if (semanas.includes(1)) {
-            semanaFilter.value = "2";
+            semanaFilter.value = "3";
           }
 
           console.log("Filtros populados:", {
@@ -1806,7 +1806,14 @@
 
           // Definir valores padrão
           mesFilter.value = "8"; // Setembro
-          if (semanas.includes(1)) semanaFilter.value = "1";
+
+          // ALTERAÇÃO AQUI: Priorizar semana 3, se disponível
+          if (semanas.includes(3)) {
+            semanaFilter.value = "3";
+          } else if (semanas.length > 0) {
+            // Se semana 3 não estiver disponível, usar a primeira semana disponível
+            semanaFilter.value = semanas[0].toString();
+          }
         }
 
         // Carregar relatório de manutenção

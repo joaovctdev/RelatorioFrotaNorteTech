@@ -22,6 +22,18 @@
         "FOTO KM": "https://drive.google.com/file/d/1wNUdlHgWlBcb7cobVJIJU4Sl2iZqRShi/view?usp=drive_link",
         "DESCRICAO": "VÁLVULA HIDRAULICA APRESENTOU UM VAZAMENTO - FOI NECESSARIA A TROCA DA ROSCA E SOLDA ELÉTRICA",
         "CUSTO": 240
-    }  
+    },
+    {
+        "MES": "SETEMBRO",
+        "SEMANA": "3",
+        "PLACA": "",
+        "MANUTENÇÃO": "CORRETIVA",
+        "FOTO FRENTE": "",
+        "FOTO AVARIA": "", 
+        "FOTO MANUTENCAO": "",
+        "FOTO KM": "",
+        "DESCRICAO": "TESTE",
+        "CUSTO": 0
+    }    
    
 ]
