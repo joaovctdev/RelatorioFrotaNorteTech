@@ -3706,7 +3706,7 @@
    "H": "12/09/2025",
    "I": "283258",
    "J": "R$ 1.200,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A KIT DE ANEIS ORING, DENTE DE CONCHA E PARAFUSOS PARA RETRO"
  },
  {
@@ -3790,7 +3790,7 @@
    "H": "12/09/2025",
    "I": "283484",
    "J": "R$ 200,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A ALINHAMENTO E BALANCEAMENTO HILLUX - PREVENTIVA"
  },
  {
@@ -3804,7 +3804,7 @@
    "H": "12/09/2025",
    "I": "283481",
    "J": "R$ 200,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A ALINHAMENTO E BALANCEAMENTO E TROCA DE ÓLEO E FILTROS STRADA"
  },
  {
@@ -3818,7 +3818,7 @@
    "H": "12/09/2025",
    "I": "283482",
    "J": "R$ 395,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A ALINHAMENTO E BALANCEAMENTO E TROCA DE ÓLEO E FILTROS STRADA"
  },
  {
@@ -3832,7 +3832,7 @@
    "H": "12/09/2025",
    "I": "283478",
    "J": "R$ 190,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A ALINHAMENTO E BALANCEAMENTO VOLVO FH"
  },
  {
@@ -3846,7 +3846,7 @@
    "H": "12/09/2025",
    "I": "283479",
    "J": "R$ 266,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A CONSERTO DO PNEU 295/80"
  },
  {
@@ -3860,7 +3860,7 @@
    "H": "13/09/2025",
    "I": "283473",
    "J": "R$ 200,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A ALINHAMENTO E BALANCEAMENTO SKY - PREVENTIVA"
  },
  {
@@ -3888,7 +3888,7 @@
    "H": "14/09/2025",
    "I": "283497",
    "J": "R$ 245,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "SERVIÇO DE REPARO NA VÁLVULA HIDRAULICA"
  },
  {
@@ -3902,7 +3902,7 @@
    "H": "14/09/2025",
    "I": "283503",
    "J": "R$ 500,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "SERVIÇO DE REPARO NA VÁLVULA HIDRAULICA"
  },
  {
@@ -4687,7 +4687,7 @@
    "I": "285152",
    "J": "R$ 2.480,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A SERVIÇOS NA PARTE ELÉTRICA DOS VEÍCULOS TRX3A42, PHV1J35, PHV1J15, QZL7E78"
  },
  {
    "A": "TOP CAR AUTO ELETRICA",
@@ -4701,7 +4701,7 @@
    "I": "285154",
    "J": "R$ 280,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A SENSOR DE PRESSÃO DO ÓLEO, CABOS E TOMADA PARA ISQUEIRO"
  },
  {
    "A": "RICARDO RIBEIRO DE JESUS",
@@ -4715,7 +4715,7 @@
    "I": "285158",
    "J": "R$ 1.080,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "SERVIÇOS DE LAVAGEM E LUBRIFICAÇÃO VEÍCULAR"
  },
  {
    "A": "RICARDO RIBEIRO DE JESUS",
@@ -4729,7 +4729,7 @@
    "I": "285164",
    "J": "R$ 1.120,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "SERVIÇOS DE LAVAGEM E LUBRIFICAÇÃO VEÍCULAR"
  },
  {
    "A": "COMEROL",
@@ -4757,7 +4757,7 @@
    "I": "285236",
    "J": "R$ 40,34",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A CAPA ISOLADORA DO TERMINAL E TERMINAL DE ENCAIXE FEMEA UNIVERSAL"
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -4771,7 +4771,7 @@
    "I": "285177",
    "J": "R$ 300,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A ALINHAMENTO DE BALANCEAMENTO - PREVENTIVA"
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -4785,7 +4785,7 @@
    "I": "285179",
    "J": "R$ 520,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A TROCA DE ÓLEO E FILTROS E ALINHAMENTO E BALANCEAMENTO - PREVENTIVA"
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -4799,7 +4799,7 @@
    "I": "285180",
    "J": "R$ 2.536,81",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A ÓLEOS, FILTROS PARA REVISÃO DO MOTOR - PREVENTIVA"
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -4813,7 +4813,7 @@
    "I": "285188",
    "J": "R$ 599,50",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A DIVERSAS LAMPADAS E LANTERNAS PARA TROCA EM VÁRIOS VEÍCULOS"
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -4827,7 +4827,7 @@
    "I": "285191",
    "J": "R$ 78,20",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A 10 LAMPADAS PARA TROCA EM VÁRIOS VEÍCULOS"
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -4841,7 +4841,7 @@
    "I": "285193",
    "J": "R$ 160,21",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE DIVERSOS A CAPA ISOLADORA DO TERMINAL E TERMINAL DE ENCAIXE FEMEA UNIVERSAL E LENTE DA LANTERNA PARA VARIOS VEÍCULOS"
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -4869,7 +4869,7 @@
    "I": "285237",
    "J": "R$ 235,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A GÁS PARA EMPILHADEIRA"
  },
  {
    "A": "TAIANE CARVALHO FIGUEIREDO",
@@ -4925,7 +4925,7 @@
    "I": "285325",
    "J": "R$ 650,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A DESEMPENO E SOLDA E REFORÇO NO TRADO"
  },
  {
    "A": "GILBERTO FERREIRA FRANCO",
@@ -5054,17 +5054,17 @@
    "L": ""
  },
  {
-   "A": "",
-   "B": "",
-   "C": "",
-   "D": "",
-   "E": "",
-   "F": "",
-   "G": "",
-   "H": "",
+   "A": "AUREO PORTO BARRETO NETO",
+   "B": "15/09/2025",
+   "C": "Setembro",
+   "D": "RATEIO",
+   "E": "44.989",
+   "F": "CORRETIVA",
+   "G": "DEPÓSITO",
+   "H": "30/09/2025",
    "I": "",
-   "J": "",
-   "K": "",
+   "J": "R$ 1.300,00",
+   "K": "PENDENTE",
    "L": ""
  },
  {
