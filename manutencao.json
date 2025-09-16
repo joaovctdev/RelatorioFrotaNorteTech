@@ -26,14 +26,14 @@
     {
         "MES": "SETEMBRO",
         "SEMANA": "3",
-        "PLACA": "",
+        "PLACA": "PHV-1J15",
         "MANUTENÇÃO": "CORRETIVA",
         "FOTO FRENTE": "",
         "FOTO AVARIA": "", 
-        "FOTO MANUTENCAO": "",
+        "FOTO MANUTENCAO": "https://drive.google.com/file/d/1Qk9uguIZZR9R_WMGmi1KoXuSSIM4_JYg/view?usp=drive_link",
         "FOTO KM": "",
         "DESCRICAO": "TESTE",
-        "CUSTO": 0
+        "CUSTO": 220
     }    
    
 ]
