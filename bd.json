@@ -3930,7 +3930,7 @@
    "H": "15/09/2025",
    "I": "283686",
    "J": "R$ 1.500,12",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A 1 BALDE DE 20LT ÓLEO HR 102 E 1 BALDE 20LT DE ÓLEO 10W40"
  },
  {
@@ -3944,7 +3944,7 @@
    "H": "15/09/2025",
    "I": "283962",
    "J": "R$ 749,19",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A TROCA DE ÓLEO E FILTROS HILLUX - PREVENTIVA"
  },
  {
@@ -3958,7 +3958,7 @@
    "H": "15/09/2025",
    "I": "448333",
    "J": "R$ 2.351,16",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A TROCA DE ÓLEO E FILTROS HILLUX - PREVENTIVA"
  },
  {
@@ -3982,11 +3982,11 @@
    "D": "PHV1J15",
    "E": "147",
    "F": "CORRETIVA",
-   "G": "DEPÓSITO",
+   "G": "P.A",
    "H": "P.A",
    "I": "283886",
    "J": "R$ 800,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A REPARO NO AR CONDICIONADO"
  },
  {
@@ -3996,11 +3996,11 @@
    "D": "PHV1J15",
    "E": "170",
    "F": "CORRETIVA",
-   "G": "DEPÓSITO",
+   "G": "P.A",
    "H": "P.A",
    "I": "283888",
    "J": "R$ 750,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A REPARO NO AR CONDICIONADO"
  },
  {
@@ -4444,11 +4444,11 @@
    "D": "RATEIO",
    "E": "54.839",
    "F": "PNEU",
-   "G": "DEPÓSITO",
+   "G": "P.A",
    "H": "P.A",
    "I": "",
    "J": "R$ 24.060,00",
-   "K": "PENDENTE",
+   "K": "PAGO",
    "L": "REFERENTE A COMPRA DE 22 PNEUS PARA BAHIA - SEQUENCIADA POR MANAUS"
  },
  {
@@ -4645,7 +4645,7 @@
    "I": "285315",
    "J": "R$ 295,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A SOLDA NAS CONEXÕES, GANCHO E ROSCA DA VALVULA HIDRAULICA"
  },
  {
    "A": "TAIANE CARVALHO FIGUEIREDO",
@@ -4659,7 +4659,7 @@
    "I": "285317",
    "J": "R$ 125,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "SERVIÇO DE MÃO DE OBRA TRABALHADA /HORA"
  },
  {
    "A": "PNEUS CAR",
@@ -4673,7 +4673,7 @@
    "I": "285313",
    "J": "R$ 1.125,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A ALINHAMENTO E BALANCEAMENTO, E SERVIÇOS DE FORÇA PARA DIVERSOS VEÍCULOS"
  },
  {
    "A": "TOP CAR AUTO ELETRICA",
@@ -4743,7 +4743,7 @@
    "I": "285301",
    "J": "R$ 624,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A DENTE CONCHA DA RETRO, PORCAS E PARAFUSO PARA A MESMA"
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -4855,7 +4855,7 @@
    "I": "285235",
    "J": "R$ 446,48",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A LAMPADAS E LANTERNA"
  },
  {
    "A": "S.S GAS LTDA ME",
@@ -4883,7 +4883,7 @@
    "I": "285300",
    "J": "R$ 250,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "SERVIÇO MÃO DE OBRA EM SOLDA, REAPERTO DAS CONEXÕES E REGULAGEM DA VÁLVULA"
  },
  {
    "A": "TAIANE CARVALHO FIGUEIREDO",
@@ -4897,7 +4897,7 @@
    "I": "285294",
    "J": "R$ 750,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A KIT DE REPARO CILINDRO DA INCLINAÇÃO MASTER"
  },
  {
    "A": "TAIANE CARVALHO FIGUEIREDO",
@@ -4911,7 +4911,7 @@
    "I": "285299",
    "J": "R$ 250,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "SERVIÇOS MÃO DE OBRA TRABALHADA /HORA"
  },
  {
    "A": "MARCELO MIRANDA DO NASCIMENTO",
@@ -4939,7 +4939,7 @@
    "I": "285328",
    "J": "R$ 550,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A 1 PNEU PARA FIAT STRADA"
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -4953,7 +4953,7 @@
    "I": "285330",
    "J": "R$ 700,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "SERVIÇO DE TORNO E NO TRAMBULADOR "
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -4966,8 +4966,8 @@
    "H": "10/10/2025",
    "I": "285330",
    "J": "R$ 224,39",
-   "K": "PENDENTE",
-   "L": ""
+   "K": ", ELETRODO",
+   "L": "REFERENTE A DISCO DE CORTE, ELETRODO,  GRAXA , BUCHA DO TRAMBULADOR "
  },
  {
    "A": "GILBERTO FERREIRA FRANCO",
@@ -4981,7 +4981,7 @@
    "I": "285343",
    "J": "R$ 300,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "SERVIÇO DE ALINHAMENTO E BALANCEAMENTO"
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -4995,7 +4995,7 @@
    "I": "285365",
    "J": "R$ 500,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A SERVIÇOS DE SOLDA NA LANÇA HIDRAULICA"
  },
  {
    "A": "AVDIESEL AUTOPECAS",
@@ -5009,7 +5009,7 @@
    "I": "285367",
    "J": "R$ 500,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A SERVIÇOS DE SOLDA NA LANÇA HIDRAULICA"
  },
  {
    "A": "TAIANE CARVALHO FIGUEIREDO",
@@ -5020,10 +5020,10 @@
    "F": "CORRETIVA",
    "G": "DEPÓSITO",
    "H": "11/10/2025",
-   "I": "",
+   "I": "285755",
    "J": "R$ 125,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "SERVIÇO DE MÃO DE OBRA TRABALHADA NO REAPERTO DAS CONEXÕES"
  },
  {
    "A": "TAIANE CARVALHO FIGUEIREDO",
@@ -5034,10 +5034,10 @@
    "F": "CORRETIVA",
    "G": "DEPÓSITO",
    "H": "11/10/2025",
-   "I": "",
+   "I": "285758",
    "J": "R$ 210,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "KIT DE REPARO DA VALVULA HIDRAULICA"
  },
  {
    "A": "COMEROL",
@@ -5048,10 +5048,10 @@
    "F": "CORRETIVA",
    "G": "BOLETO",
    "H": "11/10/2025",
-   "I": "",
+   "I": "285690",
    "J": "R$ 190,00",
    "K": "PENDENTE",
-   "L": ""
+   "L": "REFERENTE A BALDE DE GRAXA 10KG"
  },
  {
    "A": "AUREO PORTO BARRETO NETO",
@@ -5062,9 +5062,667 @@
    "F": "CORRETIVA",
    "G": "DEPÓSITO",
    "H": "30/09/2025",
-   "I": "",
+   "I": "285696",
    "J": "R$ 1.300,00",
    "K": "PENDENTE",
+   "L": "REFERENTE A VARIOS SERVIÇOS DE SOLDA EM PLATAFORMAS E SUPORTE ESCADA"
+ },
+ {
+   "A": "TRANSPECAS E COMERCIO",
+   "B": "12/09/2025",
+   "C": "Setembro",
+   "D": "RATEIO",
+   "E": "1.655",
+   "F": "CORRETIVA",
+   "G": "DEPÓSITO",
+   "H": "26/09/2025",
+   "I": "285594",
+   "J": "R$ 400,00",
+   "K": "PENDENTE",
+   "L": "REFERENTE A MANGUEIRAS HIDRAULICAS"
+ },
+ {
+   "A": "L.A.V DRESSLER E CIA LTDA",
+   "B": "12/09/2025",
+   "C": "Setembro",
+   "D": "RATEIO",
+   "E": "2.984",
+   "F": "PREVENTIVA",
+   "G": "BOLETO",
+   "H": "13/10/2025",
+   "I": "285604",
+   "J": "R$ 4.060,50",
+   "K": "PENDENTE",
+   "L": "REFERENTE A COMPRA DE 10 BALDES DE ÓLEO 68 E 5 BALDES DE ÓLEO 10W"
+ },
+ {
+   "A": "TAIANE CARVALHO FIGUEIREDO",
+   "B": "15/09/2025",
+   "C": "Setembro",
+   "D": "QZT7H96",
+   "E": "69",
+   "F": "CORRETIVA",
+   "G": "DEPÓSITO",
+   "H": "15/10/2025",
+   "I": "285763",
+   "J": "R$ 500,00",
+   "K": "PENDENTE",
+   "L": "SERVIÇO DE MÃO DE OBRA TRABALHADA"
+ },
+ {
+   "A": "TAIANE CARVALHO FIGUEIREDO",
+   "B": "15/09/2025",
+   "C": "Setembro",
+   "D": "QZT7H96",
+   "E": "68",
+   "F": "CORRETIVA",
+   "G": "DEPÓSITO",
+   "H": "15/10/2025",
+   "I": "285764",
+   "J": "R$ 1.270,00",
+   "K": "PENDENTE",
+   "L": "REFERENTE A KIT DE RAPARO CILINDRO DA ELEVAÇÃO, RETENTOR DA BOMBA HID E KIT REPARO DO COMANDO HIDRAULICO"
+ },
+ {
+   "A": "AVDIESEL AUTOPECAS",
+   "B": "16/09/2025",
+   "C": "Setembro",
+   "D": "PHV1J35",
+   "E": "1.678",
+   "F": "CORRETIVA",
+   "G": "BOLETO",
+   "H": "16/10/2025",
+   "I": "285752",
+   "J": "R$ 260,00",
+   "K": "PENDENTE",
+   "L": "SERVIÇO DE TROCA BARRA DA DIREÇÃO E PONTEIRAS"
+ },
+ {
+   "A": "AVDIESEL AUTOPECAS",
+   "B": "16/09/2025",
+   "C": "Setembro",
+   "D": "PHV1J35",
+   "E": "2.730",
+   "F": "CORRETIVA",
+   "G": "BOLETO",
+   "H": "16/10/2025",
+   "I": "285753",
+   "J": "R$ 1.546,06",
+   "K": "PENDENTE",
+   "L": "REFERENTE A BARRA DE DIREÇÃO, TERMINAL DIREÇÃO E ANTIFERRUGEM"
+ },
+ {
+   "A": "AVDIESEL AUTOPECAS",
+   "B": "16/09/2025",
+   "C": "Setembro",
+   "D": "QZB6E32",
+   "E": "1.679",
+   "F": "CORRETIVA",
+   "G": "BOLETO",
+   "H": "16/10/2025",
+   "I": "285730",
+   "J": "R$ 1.000,00",
+   "K": "PENDENTE",
+   "L": "SERVIÇO DE SOLDA NA LANÇA DO MUCK E HELICE DO TRADO"
+ },
+ {
+   "A": "AVDIESEL AUTOPECAS",
+   "B": "16/09/2025",
+   "C": "Setembro",
+   "D": "QZB6E32",
+   "E": "2.736",
+   "F": "CORRETIVA",
+   "G": "BOLETO",
+   "H": "16/10/2025",
+   "I": "285737",
+   "J": "R$ 49,85",
+   "K": "PENDENTE",
+   "L": "REFERENTE A ELETRODO"
+ },
+ {
+   "A": "IRECE PECAS E PNEUS",
+   "B": "16/09/2025",
+   "C": "Setembro",
+   "D": "TAD0A19",
+   "E": "11.756",
+   "F": "CORRETIVA",
+   "G": "DEPÓSITO",
+   "H": "16/10/2025",
+   "I": "285723",
+   "J": "R$ 245,93",
+   "K": "PENDENTE",
+   "L": "REFERENTE A 7 ÓLEOS 2T DE MOTO PODA"
+ },
+ {
+   "A": "AVDIESEL AUTOPECAS",
+   "B": "16/09/2025",
+   "C": "Setembro",
+   "D": "RATEIO",
+   "E": "2.728",
+   "F": "CORRETIVA",
+   "G": "BOLETO",
+   "H": "16/10/2025",
+   "I": "285713",
+   "J": "R$ 492,98",
+   "K": "PENDENTE",
+   "L": "REFERENTE A CHICOTES, LAMPADAS, SOQUETES, LANTERNAS"
+ },
+ {
+   "A": "EZEQUIEL SOARES",
+   "B": "16/09/2025",
+   "C": "Setembro",
+   "D": "RATEIO",
+   "E": "55.302",
+   "F": "CORRETIVA",
+   "G": "BOLETO",
+   "H": "16/10/2025",
+   "I": "285710",
+   "J": "R$ 400,00",
+   "K": "PENDENTE",
+   "L": "REFERENTE A 8 TRAVA DE SEGURANÇA  DO GANCHO DO PAPAGAIO"
+ },
+ {
+   "A": "TAIANE CARVALHO FIGUEIREDO",
+   "B": "16/09/2025",
+   "C": "Setembro",
+   "D": "PHV1J15",
+   "E": "71",
+   "F": "CORRETIVA",
+   "G": "DEPÓSITO",
+   "H": "16/10/2025",
+   "I": "285705",
+   "J": "R$ 95,00",
+   "K": "PENDENTE",
+   "L": "SERVIÇO TROCA DO REPARO VÁLVULA HIDRAULICA"
+ },
+ {
+   "A": "TAIANE CARVALHO FIGUEIREDO",
+   "B": "16/09/2025",
+   "C": "Setembro",
+   "D": "PHV1J15",
+   "E": "72",
+   "F": "CORRETIVA",
+   "G": "DEPÓSITO",
+   "H": "16/10/2025",
+   "I": "285708",
+   "J": "R$ 125,00",
+   "K": "PENDENTE",
+   "L": "REFERENTE A MÃO DE OBRA TRABALHADA"
+ },
+ {
+   "A": "TAIANE CARVALHO FIGUEIREDO",
+   "B": "16/09/2025",
+   "C": "Setembro",
+   "D": "PHV1J35",
+   "E": "70",
+   "F": "CORRETIVA",
+   "G": "DEPÓSITO",
+   "H": "16/10/2025",
+   "I": "285702",
+   "J": "R$ 250,00",
+   "K": "PENDENTE",
+   "L": "SERVIÇO DE MÃO DE OBRA PARA RETIRADA DE VAZAMENTO NA VALVULA HIDRAULICA"
+ },
+ {
+   "A": "COMEROL",
+   "B": "15/09/2025",
+   "C": "Setembro",
+   "D": "RET0002",
+   "E": "3.546",
+   "F": "CORRETIVA",
+   "G": "BOLETO",
+   "H": "15/10/2025",
+   "I": "285692",
+   "J": "R$ 1.871,00",
+   "K": "PENDENTE",
+   "L": "REFERENTE A PARABRISA FRONTAL CATTEPILLAR "
+ },
+ {
+   "A": "EZEQUIEL SOARES",
+   "B": "15/09/2025",
+   "C": "Setembro",
+   "D": "QZJ5F26",
+   "E": "55.299",
+   "F": "PNEU",
+   "G": "BOLETO",
+   "H": "15/10/2025",
+   "I": "285691",
+   "J": "R$ 1.461,56",
+   "K": "PENDENTE",
+   "L": "REFERENTE A 4 PNEUS DO FIAT MOBI LIKE"
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
+   "L": ""
+ },
+ {
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": "",
+   "E": "",
+   "F": "",
+   "G": "",
+   "H": "",
+   "I": "",
+   "J": "",
+   "K": "",
    "L": ""
  },
  {
