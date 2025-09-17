@@ -28,10 +28,10 @@
         "SEMANA": "3",
         "PLACA": "PHV-1J15",
         "MANUTENÇÃO": "CORRETIVA",
-        "FOTO FRENTE": "",
-        "FOTO AVARIA": "", 
+        "FOTO FRENTE": "https://drive.google.com/file/d/1eEKhzzfwFWT0mAK6Oqma_6B6d9_icUl5/view?usp=drive_link",
+        "FOTO AVARIA": "https://drive.google.com/file/d/1rfVpqvRDP8C9fst9PiAZZgG6UmzTmKfC/view?usp=drive_link", 
         "FOTO MANUTENCAO": "https://drive.google.com/file/d/1Qk9uguIZZR9R_WMGmi1KoXuSSIM4_JYg/view?usp=drive_link",
-        "FOTO KM": "",
+        "FOTO KM": "https://drive.google.com/file/d/1ZB6cUFxgkQSz5cFNLwaICRZYrkT7Fxnw/view?usp=drive_link",
         "DESCRICAO": "TESTE",
         "CUSTO": 220
     }    
