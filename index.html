@@ -276,6 +276,7 @@
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         transition: max-height 0.3s ease;
+
       }
 
       .table-collapsed {
@@ -367,6 +368,124 @@
           margin-left: 25px;
         }
       }
+      /* Estilos para o controle de frota */
+        .controle-frota-section {
+            background-color: #1e2535;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px auto;
+            border: 1px solid #2a3245;
+            max-width: 1413px;
+            width: 99%;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2c529;
+            position: relative;
+        }
+
+        .section-header h2 {
+            color: #e2c529;
+            font-size: 1.8rem;
+            margin: 0;
+            text-align: center;
+        }
+
+        .controle-frota-logo {
+            position: absolute;
+            right: 0;
+            width: 120px;
+            height: auto;
+        }
+
+        .frota-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #eee;
+            color: black;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .frota-table th {
+            background-color: var(--table-header);
+            color: #e2c529;
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 600;
+        }
+
+        .frota-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .frota-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .frota-table tr:hover {
+            background-color: #e9ecef;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-operacao {
+            background-color: #00ff15;
+        }
+
+        .status-ocioso {
+            background-color: #ffbd09;
+        }
+
+        .status-oficina {
+            background-color: #e74c3c;
+        }
+
+        .status-text {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .frota-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
       /* Estilos para o relatório fotográfico */
       .relatorio-fotografico {
         margin-top: 50px;
@@ -611,14 +730,16 @@
         >
           <i class="fas fa-tools"></i> Relatório Manutenção
         </button>
+        <button class="nav-button"
+        onclick="scrollToSection('controle-frota')">
+          <i class="fas fa-info-circle"></i> Status
+          <b class="">Em breve ⏳</b>
+        </button>
         <button class="nav-button disabled">
           <i class="fas fa-cogs"></i> Manutenções de Equipamento
           <b class="embreve">Em breve ⏳</b>
         </button>
-        <button class="nav-button disabled">
-          <i class="fas fa-info-circle"></i> Status
-          <b class="embreve">Em breve ⏳</b>
-        </button>
+        
         <button class="nav-button disabled">
           <i class="fas fa-map-marker-alt"></i> Rastreamento
           <b class="embreve">Em breve ⏳</b>
@@ -720,6 +841,39 @@
             </tbody>
           </table>
         </div>
+          <div class="container">
+        
+
+        <!-- Seção de Controle de Frota -->
+        <section class="controle-frota-section" id="controle-frota">
+            <div class="section-header">
+                <h2><i class="fas fa-truck"></i> STATUS DA FROTA</h2>
+                <img src="LOGOS/android-chrome-512x512.png" alt="Norte Tech Logo" class="controle-frota-logo">
+            </div>
+
+            <div class="loading" id="loading">
+                <i class="fas fa-spinner fa-spin"></i> Carregando dados da frota...
+            </div>
+        <div class="table-container">
+            <table class="frota-table" id="frota-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Placa</th>
+                        <th>Função</th>
+                        <th>Motorista</th>
+                        <th>Encarregado</th>
+                        <th>Supervisor</th>
+                        <th>Local</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="frota-table-body">
+                    <!-- Os dados serão preenchidos via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+     </div>
         <!-- Adicione este código ANTES do fechamento da div .container -->
         <div class="relatorio-fotografico" id="relatoriofotografico">
           <h2>Relatório Fotográfico</h2>
@@ -1517,7 +1671,91 @@
           modal.appendChild(closeBtn);
           document.body.appendChild(modal);
         }
+        // Função para rolar até uma seção específica
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
 
+        // Função para carregar dados do status.json
+        async function carregarDadosFrota() {
+            try {
+                const response = await fetch('status.json');
+                if (!response.ok) {
+                    throw new Error('Erro ao carregar o arquivo status.json');
+                }
+                
+                const frotaData = await response.json();
+                exibirDadosFrota(frotaData);
+            } catch (error) {
+                console.error('Erro:', error);
+                document.getElementById('loading').innerHTML = `
+                    <div style="text-align: center; color: #e74c3c;">
+                        <i class="fas fa-exclamation-triangle"></i> Erro ao carregar os dados da frota.
+                    </div>
+                `;
+            }
+        }
+
+        // Função para exibir os dados na tabela
+        function exibirDadosFrota(frotaData) {
+            const tableBody = document.getElementById('frota-table-body');
+            const loadingElement = document.getElementById('loading');
+            const tableElement = document.getElementById('frota-table');
+            
+            // Esconder loading e mostrar tabela
+            loadingElement.style.display = 'none';
+            tableElement.style.display = 'table';
+            
+            // Limpar tabela
+            tableBody.innerHTML = '';
+            
+            // Processar cada item
+            frotaData.forEach((veiculo) => {
+                const row = document.createElement('tr');
+                
+                // Determinar a classe de status
+                let statusClass = '';
+                let statusText = '';
+                
+                if (veiculo.STATUS.includes('OPERAÇÃO')) {
+                    statusClass = 'status-operacao';
+                    statusText = 'EM OPERAÇÃO';
+                } else if (veiculo.STATUS.includes('OCIOSO')) {
+                    statusClass = 'status-ocioso';
+                    statusText = 'OCIOSO';
+                } else if (veiculo.STATUS.includes('OFICINA')) {
+                    statusClass = 'status-oficina';
+                    statusText = 'NA OFICINA';
+                } else {
+                    statusClass = 'status-ocioso';
+                    statusText = veiculo.STATUS;
+                }
+                
+                row.innerHTML = `
+                    <td class="status-text">
+                        <span class="status-indicator ${statusClass}"></span>
+                        ${statusText}
+                    </td>
+                    <td>${veiculo.PLACA}</td>
+                    <td>${veiculo.FUNCAO}</td>
+                    <td>${veiculo.MOTORISTA}</td>
+                    <td>${veiculo.ENCARREGADO}</td>
+                    <td>${veiculo.SUPERVISOR}</td>
+                    <td>${veiculo.LOCAL}</td>
+                    
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+        
+
+        // Inicializar quando a página carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            carregarDadosFrota();
+        });
         // Carregar relatório fotográfico
         function carregarRelatorioFotografico() {
           const mesFiltro =
